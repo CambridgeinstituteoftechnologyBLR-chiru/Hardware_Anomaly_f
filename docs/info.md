@@ -1,5 +1,5 @@
 Hardware Anomaly Detector
-Tiny Tapeout 130nm ASIC Shuttle Author: VINAYAKA LK
+Tiny Tapeout 130nm ASIC Shuttle Author: Chirantan J Tilavalli
 
 Overview
 This project implements a Hardware Anomaly Detector, acting as an inline hardware firewall for V2X (Vehicle-to-Everything) cyber attack detection. It is designed for silicon fabrication through the Tiny Tapeout platform.
