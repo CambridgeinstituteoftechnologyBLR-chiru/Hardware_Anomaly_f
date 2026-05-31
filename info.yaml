@@ -1,26 +1,20 @@
 # Tiny Tapeout project information
+
 project:
-  title:        "Hardware Anomaly Detector"      # Project title
-  author:       "Chirantan J T"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A systolic array neural network pipeline for V2X cyber attack detection"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+  title: "Hardware Anomaly Detector"
+  author: "Chirantan J T"
+  discord: ""
+  description: "A systolic array neural network pipeline for V2X cyber attack detection"
+  language: "Verilog"
+  clock_hz: 50000000
 
-  # How many tiles your design occupies? A single tile is about 340x160 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+  tiles: "1x1"
 
-  # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_hardware_anomaly_detection"
+  top_module: "tt_um_hardware_anomaly_detection"
 
-  # List your project's source files here.
-  # Source files must be in ./src and you must list each source file separately, one per line.
-  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "tt_um_hardware_anomaly_detection.v"
 
-# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
-# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
   ui[0]: "bit_in"
@@ -33,24 +27,25 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "final_score[0]"
-  uo[1]: "final_score[1]"
-  uo[2]: "final_score[2]"
-  uo[3]: "final_score[3]"
-  uo[4]: "final_score[4]"
-  uo[5]: "final_score[5]"
-  uo[6]: "final_score[6]"
-  uo[7]: "final_score[7]"
+  uo[0]: "score[0]"
+  uo[1]: "score[1]"
+  uo[2]: "score[2]"
+  uo[3]: "score[3]"
+  uo[4]: "score[4]"
+  uo[5]: "score[5]"
+  uo[6]: "score[6]"
+  uo[7]: "score[7]"
 
   # Bidirectional pins
-  uio[0]: "done_pulse"
+  uio[0]: "done"
   uio[1]: "irq"
-  uio[2]: ""
+  uio[2]: "tx_pin"
   uio[3]: ""
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
 
+yaml_version: 6
 # Do not change!
 yaml_version: 6
