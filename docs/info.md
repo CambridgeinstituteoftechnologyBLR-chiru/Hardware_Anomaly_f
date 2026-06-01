@@ -1,4 +1,4 @@
-Hardware Anomaly Detector
+tt_um_hardware_anomaly_detection
 Tiny Tapeout 130nm ASIC Shuttle Author: Chirantan J Tilavalli
 
 Overview
